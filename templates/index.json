@@ -2653,6 +2653,46 @@
         "minComfyUIVersion": "0.21.1"
       },
       {
+        "name": "api_openai_gpt_image_2_dark_gold_host_overlay",
+        "title": "GPT Image 2: Dark Gold Explainer Overlay",
+        "description": "Upload a talking-head frame and add Dark Gold Explainer overlays for vertical explainer reels: a glowing yellow hook title, a caption with one yellow keyword, and a dark lower-third card. Edit the Thai words in the prompt to fit your script.",
+        "mediaType": "image",
+        "mediaSubtype": "webp",
+        "tags": ["Image Edit","API"],
+        "models": ["GPT Image 2"],
+        "logos": [
+          {
+            "provider": "OpenAI"
+          }
+        ],
+        "date": "2026-11-21",
+        "openSource": false,
+        "size": 0,
+        "usage": 0,
+        "searchRank": 0,
+        "username": "ComfyUI",
+        "io": {
+          "inputs": [
+            {
+              "nodeId": 271,
+              "nodeType": "LoadImage",
+              "file": "dark_gold_host_frame.png",
+              "mediaType": "image"
+            }
+          ],
+          "outputs": [
+            {
+              "nodeId": 269,
+              "nodeType": "SaveImage",
+              "file": "api_openai_gpt_image_2_dark_gold_host_overlay.png",
+              "mediaType": "image"
+            }
+          ]
+        },
+        "thumbnail": ["output/api_openai_gpt_image_2_dark_gold_host_overlay.png"],
+        "minComfyUIVersion": "0.21.1"
+      },
+      {
         "name": "api_openai_gpt_image_2_t2i",
         "title": "GPT Image 2: Text to Image",
         "description": "Create campaign-ready posters, product shots, and multilingual signage using OpenAI's latest model. Upload an optional reference image, write a detailed prompt, and generate high-quality, photorealistic outputs.",

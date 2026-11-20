@@ -1,0 +1,222 @@
+{
+  "id": "53541986-c311-4262-8459-6fe78ea7f42d",
+  "revision": 0,
+  "last_node_id": 277,
+  "last_link_id": 385,
+  "nodes": [
+    {
+      "id": 277,
+      "type": "MarkdownNote",
+      "pos": [
+        -1230,
+        160
+      ],
+      "size": [
+        400,
+        380
+      ],
+      "flags": {},
+      "order": 0,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [],
+      "properties": {},
+      "widgets_values": [
+        "## Dark Gold Explainer overlay\n\nUpload a talking-head frame. GPT Image 2 adds three overlays in the Dark Gold Explainer style:\n\n- **Hook title**: yellow glowing words at the top\n- **Caption**: white words on the wall above the head, one keyword in yellow\n- **Lower-third**: dark card at the bottom-left with a label and a yellow value\n\nTo change the words, edit the quoted Thai strings in the prompt. Keep the colors, positions and font description as they are.\n\nThe text is painted by the model, not typeset. Check the Thai spelling in every result.\n\n## Input Asset\n\n- [dark_gold_host_frame.png](https://raw.githubusercontent.com/Comfy-Org/workflow_templates/refs/heads/main/input/dark_gold_host_frame.png)\n"
+      ],
+      "widgets_values_named": {
+        "text": "## Input Asset\n\n- [outfit_swap_base_gpt_image25.png](https://raw.githubusercontent.com/Comfy-Org/workflow_templates/refs/heads/main/input/outfit_swap_base_gpt_image25.png)\n\n\n## Report Issue\n\nNote: Please update ComfyUI first ([guide](https://docs.comfy.org/installation/update_comfyui)) and prepare required models. Desktop/Cloud updates follow stable releases, so some nightly-supported models may not be available yet.\n\n- Cannot run / runtime errors: [ComfyUI/issues](https://github.com/comfyanonymous/ComfyUI/issues)\n- UI / frontend issues: [ComfyUI_frontend/issues](https://github.com/Comfy-Org/ComfyUI_frontend/issues)\n- Workflow issues: [workflow_templates/issues](https://github.com/Comfy-Org/workflow_templates/issues)\n"
+      },
+      "color": "#222",
+      "bgcolor": "#000"
+    },
+    {
+      "id": 269,
+      "type": "SaveImage",
+      "pos": [
+        -330,
+        580
+      ],
+      "size": [
+        510,
+        430
+      ],
+      "flags": {},
+      "order": 2,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "images",
+          "type": "IMAGE",
+          "link": 385
+        }
+      ],
+      "outputs": [
+        {
+          "name": "images",
+          "type": "IMAGE",
+          "links": null
+        }
+      ],
+      "properties": {
+        "cnr_id": "comfy-core",
+        "ver": "0.19.3",
+        "Node name for S&R": "SaveImage",
+        "ue_properties": {
+          "widget_ue_connectable": {},
+          "input_ue_unconnectable": {},
+          "version": "7.7"
+        }
+      },
+      "widgets_values": [
+        "dark_gold_overlay"
+      ]
+    },
+    {
+      "id": 271,
+      "type": "LoadImage",
+      "pos": [
+        -1230,
+        580
+      ],
+      "size": [
+        370,
+        410
+      ],
+      "flags": {},
+      "order": 0,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [
+        {
+          "name": "IMAGE",
+          "type": "IMAGE",
+          "links": [
+            384
+          ]
+        },
+        {
+          "name": "MASK",
+          "type": "MASK",
+          "links": null
+        }
+      ],
+      "properties": {
+        "cnr_id": "comfy-core",
+        "ver": "0.19.3",
+        "Node name for S&R": "LoadImage",
+        "ue_properties": {
+          "widget_ue_connectable": {},
+          "input_ue_unconnectable": {}
+        }
+      },
+      "widgets_values": [
+        "dark_gold_host_frame.png",
+        "image"
+      ]
+    },
+    {
+      "id": 276,
+      "type": "OpenAIGPTImageNodeV2",
+      "pos": [
+        -790,
+        580
+      ],
+      "size": [
+        400,
+        420
+      ],
+      "flags": {},
+      "order": 1,
+      "mode": 0,
+      "inputs": [
+        {
+          "label": "image_1",
+          "name": "model.images.image_1",
+          "shape": 7,
+          "type": "IMAGE",
+          "link": 384
+        },
+        {
+          "label": "image_2",
+          "name": "model.images.image_2",
+          "shape": 7,
+          "type": "IMAGE",
+          "link": null
+        },
+        {
+          "label": "mask",
+          "name": "model.mask",
+          "shape": 7,
+          "type": "MASK",
+          "link": null
+        }
+      ],
+      "outputs": [
+        {
+          "name": "IMAGE",
+          "type": "IMAGE",
+          "links": [
+            385
+          ]
+        }
+      ],
+      "properties": {
+        "cnr_id": "comfy-core",
+        "ver": "0.28.0",
+        "Node name for S&R": "OpenAIGPTImageNodeV2"
+      },
+      "widgets_values": [
+        "Edit image_1, a talking-head frame from a podcast-style explainer video. Keep the person, face, pose, hands, headphones or microphone, and room exactly as they are, and reframe to a vertical 9:16 shot.\n\nColor grade: reduce blue, purple and cyan saturation by about 30%, push the shadows toward warm black (#0E0C0B), keep the warm orange practical lights.\n\nAdd flat motion-graphics text overlays in a rounded, bold Thai sans-serif typeface (Kanit style). Render the Thai text exactly as written:\n1) Hook title, top of the frame (4-12% from the top), centred: \"รายได้ $0\" in bright yellow #F5CC27, extra bold, with a soft yellow glow and a slight dark drop shadow.\n2) Caption, centred at about 19% from the top, on the wall above the head: \"สร้างช่อง ไม่ต้องโชว์หน้า\". White bold text with a soft dark shadow; only the words \"ไม่ต้องโชว์หน้า\" are yellow #F5CC27.\n3) Lower-third card, bottom-left at 76-86% from the top, about 30 px from the left edge: a dark rounded card (fill #1F1A17, 1 px border #3A322B, corner radius 16, deep soft shadow). Inside it, left to right: a dark circular disc holding a bold yellow \"$\", then two lines: a small muted label \"รายได้ต่อเดือน\" in #B8B0A6 and a larger bold yellow value \"10,000\".\n\nNo other text, no logos, no emoji, no icons, no gradients. The overlays must not cover the face, the microphone or the hands.",
+        "gpt-image-2",
+        "1024x1536",
+        1024,
+        1024,
+        "auto",
+        "medium",
+        1,
+        0,
+        "randomize"
+      ],
+      "color": "#432",
+      "bgcolor": "#653"
+    }
+  ],
+  "links": [
+    [
+      384,
+      271,
+      0,
+      276,
+      0,
+      "IMAGE"
+    ],
+    [
+      385,
+      276,
+      0,
+      269,
+      0,
+      "IMAGE"
+    ]
+  ],
+  "groups": [],
+  "config": {},
+  "extra": {
+    "ds": {
+      "scale": 0.5775355900614667,
+      "offset": [
+        2153.754676621754,
+        -116.16172304874246
+      ]
+    },
+    "frontendVersion": "1.45.21",
+    "ue_links": [],
+    "links_added_by_ue": [],
+    "VHS_latentpreview": false,
+    "VHS_latentpreviewrate": 0,
+    "VHS_MetadataImage": true,
+    "VHS_KeepIntermediate": true
+  },
+  "version": 0.4
+}

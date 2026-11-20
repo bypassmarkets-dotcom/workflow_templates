@@ -35389,6 +35389,40 @@
         "it": "Chiedi a HeyGen Decision 1 una domanda sì/no o un punteggio su testo, immagini, audio o video e usa la risposta per instradare il grafo. Due schemi nello stesso workflow: una singola immagine approvata da un verdetto sì/no, oppure due immagini valutate da 1 a 10 e confrontate così che uno switch passi la migliore a valle. Ideale come filtro di qualità economico prima di una generazione costosa o per scegliere fra più candidati.",
         "he": "שאלו את HeyGen Decision 1 שאלת כן/לא או שאלת ניקוד על טקסט, תמונות, אודיו או וידאו, והפנו את הגרף לפי התשובה. בשני דפוסים באותו זרימת עבודה: תמונה אחת שעוברת לפי הכרעת כן/לא, או שתי תמונות שמדורגות 1–10 ומושוות כך שמתג מעביר את הטובה יותר להמשך. מתאים כשער איכות זול לפני יצירה יקרה או לבחירה בין כמה מועמדים."
       }
+    },
+    "api_openai_gpt_image_2_dark_gold_host_overlay": {
+      "title": {
+        "en": "GPT Image 2: Dark Gold Explainer Overlay",
+        "zh": "GPT Image 2：暗金讲解叠加层",
+        "zh-TW": "GPT Image 2：暗金講解疊加層",
+        "ja": "GPT Image 2：ダークゴールド解説オーバーレイ",
+        "ko": "GPT Image 2: 다크 골드 해설 오버레이",
+        "es": "GPT Image 2: Superposición Dark Gold Explainer",
+        "fr": "GPT Image 2 : Superposition Dark Gold Explainer",
+        "ru": "GPT Image 2: Наложения Dark Gold Explainer",
+        "tr": "GPT Image 2: Dark Gold Explainer Katmanı",
+        "ar": "GPT Image 2: طبقات Dark Gold Explainer",
+        "pt-BR": "GPT Image 2: Sobreposição Dark Gold Explainer",
+        "fa": "GPT Image 2: لایه‌های Dark Gold Explainer",
+        "it": "GPT Image 2: Overlay Dark Gold Explainer",
+        "he": "GPT Image 2: שכבות Dark Gold Explainer"
+      },
+      "description": {
+        "en": "Upload a talking-head frame and add Dark Gold Explainer overlays for vertical explainer reels: a glowing yellow hook title, a caption with one yellow keyword, and a dark lower-third card. Edit the Thai words in the prompt to fit your script.",
+        "zh": "上传一张口播画面，为竖屏讲解短视频添加暗金讲解风格叠加层：发光的黄色开场标题、带一个黄色关键词的字幕，以及深色下三分之一信息卡。可在提示词中修改泰语文字以匹配你的脚本。",
+        "zh-TW": "上傳一張口播畫面，為直式講解短影音加入暗金講解風格疊加層：發光的黃色開場標題、帶一個黃色關鍵字的字幕，以及深色下三分之一資訊卡。可在提示詞中修改泰文文字以配合你的腳本。",
+        "ja": "トーキングヘッドのフレームをアップロードし、縦型解説リール向けのダークゴールド解説スタイルのオーバーレイを追加します。光る黄色のフックタイトル、黄色のキーワードを1つ含む字幕、ダークなローワーサードカードです。プロンプト内のタイ語の文言を台本に合わせて編集できます。",
+        "ko": "토킹헤드 프레임을 업로드하고 세로형 해설 릴스용 다크 골드 해설 스타일 오버레이를 추가하세요. 빛나는 노란색 훅 타이틀, 노란색 키워드 하나가 들어간 자막, 어두운 로어서드 카드가 포함됩니다. 프롬프트의 태국어 문구를 스크립트에 맞게 수정하세요.",
+        "es": "Sube un fotograma de presentador a cámara y añade superposiciones al estilo Dark Gold Explainer para reels explicativos verticales: un título gancho amarillo brillante, un subtítulo con una palabra clave en amarillo y una tarjeta oscura de tercio inferior. Edita las palabras en tailandés del prompt para adaptarlas a tu guion.",
+        "fr": "Téléversez une image de présentateur face caméra et ajoutez des superpositions dans le style Dark Gold Explainer pour des reels explicatifs verticaux : un titre d'accroche jaune lumineux, un sous-titre avec un mot-clé en jaune et une carte sombre en tiers inférieur. Modifiez les mots thaïs du prompt selon votre script.",
+        "ru": "Загрузите кадр с ведущим в кадре и добавьте наложения в стиле Dark Gold Explainer для вертикальных обучающих роликов: светящийся жёлтый заголовок-крючок, субтитр с одним жёлтым ключевым словом и тёмную плашку нижней трети. Измените тайские слова в промпте под свой сценарий.",
+        "tr": "Kameraya konuşan bir kare yükleyin ve dikey anlatım videoları için Dark Gold Explainer tarzı katmanlar ekleyin: parlayan sarı bir kanca başlığı, tek sarı anahtar kelimeli bir altyazı ve koyu bir alt üçte bir kartı. Senaryonuza uyması için istemdeki Tayca kelimeleri düzenleyin.",
+        "ar": "حمّل إطارًا لمتحدث أمام الكاميرا وأضف طبقات بأسلوب Dark Gold Explainer لمقاطع الشرح العمودية: عنوان جذب أصفر متوهج، وتسمية توضيحية بكلمة مفتاحية واحدة باللون الأصفر، وبطاقة داكنة في الثلث السفلي. عدّل الكلمات التايلاندية في الموجّه لتناسب نصك.",
+        "pt-BR": "Envie um quadro de apresentador falando para a câmera e adicione sobreposições no estilo Dark Gold Explainer para reels explicativos verticais: um título de gancho amarelo brilhante, uma legenda com uma palavra-chave em amarelo e um cartão escuro de terço inferior. Edite as palavras em tailandês no prompt para combinar com seu roteiro.",
+        "fa": "یک فریم از گوینده روبه‌دوربین بارگذاری کنید و لایه‌هایی به سبک Dark Gold Explainer برای ریل‌های توضیحی عمودی اضافه کنید: عنوان قلاب زرد درخشان، زیرنویس با یک کلیدواژه زرد و کارت تیره یک‌سوم پایینی. کلمات تایلندی پرامپت را مطابق فیلم‌نامه خود ویرایش کنید.",
+        "it": "Carica un fotogramma con un presentatore in camera e aggiungi overlay in stile Dark Gold Explainer per reel esplicativi verticali: un titolo gancio giallo luminoso, una didascalia con una parola chiave in giallo e una scheda scura nel terzo inferiore. Modifica le parole thailandesi nel prompt per adattarle al tuo copione.",
+        "he": "העלו פריים של מגיש מול המצלמה והוסיפו שכבות בסגנון Dark Gold Explainer לסרטוני הסבר אנכיים: כותרת פתיחה צהובה זוהרת, כתובית עם מילת מפתח אחת בצהוב וכרטיס כהה בשליש התחתון. ערכו את המילים בתאית בפרומפט כך שיתאימו לתסריט שלכם."
+      }
     }
   },
   "tags": {
