@@ -2653,6 +2653,46 @@
         "minComfyUIVersion": "0.21.1"
       },
       {
+        "name": "api_openai_gpt_image_2_dark_gold_host_overlay",
+        "title": "GPT Image 2: Dark Gold Explainer Katmanı",
+        "description": "Kameraya konuşan bir kare yükleyin ve dikey anlatım videoları için Dark Gold Explainer tarzı katmanlar ekleyin: parlayan sarı bir kanca başlığı, tek sarı anahtar kelimeli bir altyazı ve koyu bir alt üçte bir kartı. Senaryonuza uyması için istemdeki Tayca kelimeleri düzenleyin.",
+        "mediaType": "image",
+        "mediaSubtype": "webp",
+        "tags": ["Görüntü Düzenleme","API"],
+        "models": ["GPT Image 2"],
+        "logos": [
+          {
+            "provider": "OpenAI"
+          }
+        ],
+        "date": "2026-11-21",
+        "openSource": false,
+        "size": 0,
+        "usage": 0,
+        "searchRank": 0,
+        "username": "ComfyUI",
+        "io": {
+          "inputs": [
+            {
+              "nodeId": 271,
+              "nodeType": "LoadImage",
+              "file": "dark_gold_host_frame.png",
+              "mediaType": "image"
+            }
+          ],
+          "outputs": [
+            {
+              "nodeId": 269,
+              "nodeType": "SaveImage",
+              "file": "api_openai_gpt_image_2_dark_gold_host_overlay.png",
+              "mediaType": "image"
+            }
+          ]
+        },
+        "thumbnail": ["output/api_openai_gpt_image_2_dark_gold_host_overlay.png"],
+        "minComfyUIVersion": "0.21.1"
+      },
+      {
         "name": "api_openai_gpt_image_2_t2i",
         "title": "GPT Görsel 2: metinden görüntü",
         "description": "OpenAI'nin en son modelini kullanarak kampanyaya hazır posterler, ürün fotoğrafları ve çok dilli tabelalar oluşturun. İsteğe bağlı bir referans görüntü yükleyin, ayrıntılı bir istem yazın ve yüksek kaliteli, fotogerçekçi çıktılar oluşturun.",

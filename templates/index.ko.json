@@ -2653,6 +2653,46 @@
         "minComfyUIVersion": "0.21.1"
       },
       {
+        "name": "api_openai_gpt_image_2_dark_gold_host_overlay",
+        "title": "GPT Image 2: 다크 골드 해설 오버레이",
+        "description": "토킹헤드 프레임을 업로드하고 세로형 해설 릴스용 다크 골드 해설 스타일 오버레이를 추가하세요. 빛나는 노란색 훅 타이틀, 노란색 키워드 하나가 들어간 자막, 어두운 로어서드 카드가 포함됩니다. 프롬프트의 태국어 문구를 스크립트에 맞게 수정하세요.",
+        "mediaType": "image",
+        "mediaSubtype": "webp",
+        "tags": ["이미지 편집","API"],
+        "models": ["GPT Image 2"],
+        "logos": [
+          {
+            "provider": "OpenAI"
+          }
+        ],
+        "date": "2026-11-21",
+        "openSource": false,
+        "size": 0,
+        "usage": 0,
+        "searchRank": 0,
+        "username": "ComfyUI",
+        "io": {
+          "inputs": [
+            {
+              "nodeId": 271,
+              "nodeType": "LoadImage",
+              "file": "dark_gold_host_frame.png",
+              "mediaType": "image"
+            }
+          ],
+          "outputs": [
+            {
+              "nodeId": 269,
+              "nodeType": "SaveImage",
+              "file": "api_openai_gpt_image_2_dark_gold_host_overlay.png",
+              "mediaType": "image"
+            }
+          ]
+        },
+        "thumbnail": ["output/api_openai_gpt_image_2_dark_gold_host_overlay.png"],
+        "minComfyUIVersion": "0.21.1"
+      },
+      {
         "name": "api_openai_gpt_image_2_t2i",
         "title": "GPT 이미지 2: 텍스트 기반 이미지 생성",
         "description": "OpenAI의 최신 모델을 사용하여 캠페인에 사용할 수 있는 포스터, 제품 사진 및 다국어 간판을 생성하세요. 선택적으로 레퍼런스 이미지를 업로드하고 상세한 프롬프트를 작성하여 고품질의 포토리얼리스틱 출력을 생성합니다.",

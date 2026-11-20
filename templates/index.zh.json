@@ -2653,6 +2653,46 @@
         "minComfyUIVersion": "0.21.1"
       },
       {
+        "name": "api_openai_gpt_image_2_dark_gold_host_overlay",
+        "title": "GPT Image 2：暗金讲解叠加层",
+        "description": "上传一张口播画面，为竖屏讲解短视频添加暗金讲解风格叠加层：发光的黄色开场标题、带一个黄色关键词的字幕，以及深色下三分之一信息卡。可在提示词中修改泰语文字以匹配你的脚本。",
+        "mediaType": "image",
+        "mediaSubtype": "webp",
+        "tags": ["图片编辑","API"],
+        "models": ["GPT Image 2"],
+        "logos": [
+          {
+            "provider": "OpenAI"
+          }
+        ],
+        "date": "2026-11-21",
+        "openSource": false,
+        "size": 0,
+        "usage": 0,
+        "searchRank": 0,
+        "username": "ComfyUI",
+        "io": {
+          "inputs": [
+            {
+              "nodeId": 271,
+              "nodeType": "LoadImage",
+              "file": "dark_gold_host_frame.png",
+              "mediaType": "image"
+            }
+          ],
+          "outputs": [
+            {
+              "nodeId": 269,
+              "nodeType": "SaveImage",
+              "file": "api_openai_gpt_image_2_dark_gold_host_overlay.png",
+              "mediaType": "image"
+            }
+          ]
+        },
+        "thumbnail": ["output/api_openai_gpt_image_2_dark_gold_host_overlay.png"],
+        "minComfyUIVersion": "0.21.1"
+      },
+      {
         "name": "api_openai_gpt_image_2_t2i",
         "title": "GPT 图像 2：文生图",
         "description": "使用OpenAI的最新模型创建可用于宣传的海报、产品照片和多语言标牌。上传可选的参考图，编写详细的提示词，生成高质量、逼真的输出。",

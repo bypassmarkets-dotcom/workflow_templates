@@ -2653,6 +2653,46 @@
         "minComfyUIVersion": "0.21.1"
       },
       {
+        "name": "api_openai_gpt_image_2_dark_gold_host_overlay",
+        "title": "GPT Image 2: Наложения Dark Gold Explainer",
+        "description": "Загрузите кадр с ведущим в кадре и добавьте наложения в стиле Dark Gold Explainer для вертикальных обучающих роликов: светящийся жёлтый заголовок-крючок, субтитр с одним жёлтым ключевым словом и тёмную плашку нижней трети. Измените тайские слова в промпте под свой сценарий.",
+        "mediaType": "image",
+        "mediaSubtype": "webp",
+        "tags": ["Редактирование изображения","API"],
+        "models": ["GPT Image 2"],
+        "logos": [
+          {
+            "provider": "OpenAI"
+          }
+        ],
+        "date": "2026-11-21",
+        "openSource": false,
+        "size": 0,
+        "usage": 0,
+        "searchRank": 0,
+        "username": "ComfyUI",
+        "io": {
+          "inputs": [
+            {
+              "nodeId": 271,
+              "nodeType": "LoadImage",
+              "file": "dark_gold_host_frame.png",
+              "mediaType": "image"
+            }
+          ],
+          "outputs": [
+            {
+              "nodeId": 269,
+              "nodeType": "SaveImage",
+              "file": "api_openai_gpt_image_2_dark_gold_host_overlay.png",
+              "mediaType": "image"
+            }
+          ]
+        },
+        "thumbnail": ["output/api_openai_gpt_image_2_dark_gold_host_overlay.png"],
+        "minComfyUIVersion": "0.21.1"
+      },
+      {
         "name": "api_openai_gpt_image_2_t2i",
         "title": "GPT Изображение 2: текст в изображение",
         "description": "Создавайте готовые к кампании плакаты, изображения продуктов и многоязычные вывески, используя последнюю модель OpenAI. Загрузите дополнительное референсное изображение, напишите подробный промпт и генерируйте высококачественные фотореалистичные выходы.",

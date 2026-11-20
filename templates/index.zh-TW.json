@@ -2653,6 +2653,46 @@
         "minComfyUIVersion": "0.21.1"
       },
       {
+        "name": "api_openai_gpt_image_2_dark_gold_host_overlay",
+        "title": "GPT Image 2：暗金講解疊加層",
+        "description": "上傳一張口播畫面，為直式講解短影音加入暗金講解風格疊加層：發光的黃色開場標題、帶一個黃色關鍵字的字幕，以及深色下三分之一資訊卡。可在提示詞中修改泰文文字以配合你的腳本。",
+        "mediaType": "image",
+        "mediaSubtype": "webp",
+        "tags": ["圖片編輯","API"],
+        "models": ["GPT Image 2"],
+        "logos": [
+          {
+            "provider": "OpenAI"
+          }
+        ],
+        "date": "2026-11-21",
+        "openSource": false,
+        "size": 0,
+        "usage": 0,
+        "searchRank": 0,
+        "username": "ComfyUI",
+        "io": {
+          "inputs": [
+            {
+              "nodeId": 271,
+              "nodeType": "LoadImage",
+              "file": "dark_gold_host_frame.png",
+              "mediaType": "image"
+            }
+          ],
+          "outputs": [
+            {
+              "nodeId": 269,
+              "nodeType": "SaveImage",
+              "file": "api_openai_gpt_image_2_dark_gold_host_overlay.png",
+              "mediaType": "image"
+            }
+          ]
+        },
+        "thumbnail": ["output/api_openai_gpt_image_2_dark_gold_host_overlay.png"],
+        "minComfyUIVersion": "0.21.1"
+      },
+      {
         "name": "api_openai_gpt_image_2_t2i",
         "title": "GPT 圖像 2：文生圖",
         "description": "使用OpenAI的最新模型建立可用於宣傳的海報、產品照片和多語言標牌。上傳可選的參考圖，編寫詳細的提示詞，產生高品質、逼真的輸出。",

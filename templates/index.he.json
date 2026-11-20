@@ -2653,6 +2653,46 @@
         "minComfyUIVersion": "0.21.1"
       },
       {
+        "name": "api_openai_gpt_image_2_dark_gold_host_overlay",
+        "title": "GPT Image 2: שכבות Dark Gold Explainer",
+        "description": "העלו פריים של מגיש מול המצלמה והוסיפו שכבות בסגנון Dark Gold Explainer לסרטוני הסבר אנכיים: כותרת פתיחה צהובה זוהרת, כתובית עם מילת מפתח אחת בצהוב וכרטיס כהה בשליש התחתון. ערכו את המילים בתאית בפרומפט כך שיתאימו לתסריט שלכם.",
+        "mediaType": "image",
+        "mediaSubtype": "webp",
+        "tags": ["עריכת תמונה","API"],
+        "models": ["GPT Image 2"],
+        "logos": [
+          {
+            "provider": "OpenAI"
+          }
+        ],
+        "date": "2026-11-21",
+        "openSource": false,
+        "size": 0,
+        "usage": 0,
+        "searchRank": 0,
+        "username": "ComfyUI",
+        "io": {
+          "inputs": [
+            {
+              "nodeId": 271,
+              "nodeType": "LoadImage",
+              "file": "dark_gold_host_frame.png",
+              "mediaType": "image"
+            }
+          ],
+          "outputs": [
+            {
+              "nodeId": 269,
+              "nodeType": "SaveImage",
+              "file": "api_openai_gpt_image_2_dark_gold_host_overlay.png",
+              "mediaType": "image"
+            }
+          ]
+        },
+        "thumbnail": ["output/api_openai_gpt_image_2_dark_gold_host_overlay.png"],
+        "minComfyUIVersion": "0.21.1"
+      },
+      {
         "name": "api_openai_gpt_image_2_t2i",
         "title": "GPT Image 2: טקסט לתמונה",
         "description": "יצירת פוסטרים מוכנים לקמפיין, צילומי מוצר ושילוט רב-לשוני עם המודל האחרון של OpenAI. מעלים תמונת רפרנס אופציונלית, כותבים פרומפט מפורט ומייצרים פלטים איכותיים ופוטוריאליסטיים.",

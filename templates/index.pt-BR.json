@@ -2653,6 +2653,46 @@
         "minComfyUIVersion": "0.21.1"
       },
       {
+        "name": "api_openai_gpt_image_2_dark_gold_host_overlay",
+        "title": "GPT Image 2: Sobreposição Dark Gold Explainer",
+        "description": "Envie um quadro de apresentador falando para a câmera e adicione sobreposições no estilo Dark Gold Explainer para reels explicativos verticais: um título de gancho amarelo brilhante, uma legenda com uma palavra-chave em amarelo e um cartão escuro de terço inferior. Edite as palavras em tailandês no prompt para combinar com seu roteiro.",
+        "mediaType": "image",
+        "mediaSubtype": "webp",
+        "tags": ["Edição de imagem","API"],
+        "models": ["GPT Image 2"],
+        "logos": [
+          {
+            "provider": "OpenAI"
+          }
+        ],
+        "date": "2026-11-21",
+        "openSource": false,
+        "size": 0,
+        "usage": 0,
+        "searchRank": 0,
+        "username": "ComfyUI",
+        "io": {
+          "inputs": [
+            {
+              "nodeId": 271,
+              "nodeType": "LoadImage",
+              "file": "dark_gold_host_frame.png",
+              "mediaType": "image"
+            }
+          ],
+          "outputs": [
+            {
+              "nodeId": 269,
+              "nodeType": "SaveImage",
+              "file": "api_openai_gpt_image_2_dark_gold_host_overlay.png",
+              "mediaType": "image"
+            }
+          ]
+        },
+        "thumbnail": ["output/api_openai_gpt_image_2_dark_gold_host_overlay.png"],
+        "minComfyUIVersion": "0.21.1"
+      },
+      {
         "name": "api_openai_gpt_image_2_t2i",
         "title": "GPT Imagem 2: texto para imagem",
         "description": "Crie pôsteres prontos para campanhas, fotos de produtos e sinalização multilíngue usando o modelo mais recente da OpenAI. Envie uma imagem de referência opcional, escreva um prompt detalhado e gere saídas de alta qualidade e fotorrealistas.",

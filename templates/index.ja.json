@@ -2653,6 +2653,46 @@
         "minComfyUIVersion": "0.21.1"
       },
       {
+        "name": "api_openai_gpt_image_2_dark_gold_host_overlay",
+        "title": "GPT Image 2：ダークゴールド解説オーバーレイ",
+        "description": "トーキングヘッドのフレームをアップロードし、縦型解説リール向けのダークゴールド解説スタイルのオーバーレイを追加します。光る黄色のフックタイトル、黄色のキーワードを1つ含む字幕、ダークなローワーサードカードです。プロンプト内のタイ語の文言を台本に合わせて編集できます。",
+        "mediaType": "image",
+        "mediaSubtype": "webp",
+        "tags": ["画像編集","API"],
+        "models": ["GPT Image 2"],
+        "logos": [
+          {
+            "provider": "OpenAI"
+          }
+        ],
+        "date": "2026-11-21",
+        "openSource": false,
+        "size": 0,
+        "usage": 0,
+        "searchRank": 0,
+        "username": "ComfyUI",
+        "io": {
+          "inputs": [
+            {
+              "nodeId": 271,
+              "nodeType": "LoadImage",
+              "file": "dark_gold_host_frame.png",
+              "mediaType": "image"
+            }
+          ],
+          "outputs": [
+            {
+              "nodeId": 269,
+              "nodeType": "SaveImage",
+              "file": "api_openai_gpt_image_2_dark_gold_host_overlay.png",
+              "mediaType": "image"
+            }
+          ]
+        },
+        "thumbnail": ["output/api_openai_gpt_image_2_dark_gold_host_overlay.png"],
+        "minComfyUIVersion": "0.21.1"
+      },
+      {
         "name": "api_openai_gpt_image_2_t2i",
         "title": "GPT 画像 2：テキストから画像へ",
         "description": "OpenAIの最新モデルを使用して、キャンペーン対応のポスター、商品写真、多言語の看板を作成します。オプションの参照画像をアップロードし、詳細なプロンプトを記述して、高品質でフォトリアルな出力を生成します。",

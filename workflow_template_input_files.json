@@ -2551,6 +2551,16 @@
       "mime_type": "video/mp4"
     },
     {
+      "file_path": "input/dark_gold_host_frame.png",
+      "url": "https://raw.githubusercontent.com/Comfy-Org/workflow_templates/refs/heads/main/input/dark_gold_host_frame.png",
+      "display_name": "dark_gold_host_frame.png",
+      "tags": [
+        "input",
+        "image"
+      ],
+      "mime_type": "image/png"
+    },
+    {
       "file_path": "input/deep_blue_whale_swim_scene.png",
       "url": "https://raw.githubusercontent.com/Comfy-Org/workflow_templates/refs/heads/main/input/deep_blue_whale_swim_scene.png",
       "display_name": "deep_blue_whale_swim_scene.png",
